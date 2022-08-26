@@ -8,6 +8,8 @@ public class SubMenuOperation {
     public SubMenuOperation(FileHandler fh){
         this.fh = fh;
     }
+
+    // Method for displaying submenu screen and operate as per user input.
     public void runSubMenu(){
         Scanner sc = new Scanner(System.in);
         int option = 1;

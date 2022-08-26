@@ -5,13 +5,13 @@ import java.util.Scanner;
 
 public class FileHandler {
 
-    // List out all available files in default location with is desktop at the moment.
+    // List out all available files in default location which is desktop at the moment.
     public void listFiles(){
        try {
            File dir = new File(getDefaultFilePath());
 
            File[] files = dir.listFiles();
-           Arrays.sort(files);
+           Arrays.sort(files); // sorting files
            if (files.length == 0) {
                System.out.println("The directory is empty");
            } else {
@@ -21,7 +21,7 @@ public class FileHandler {
                for (File aFile : files) {
                    System.out.println(aFile.getName());
                }
-               Scanner sc = new Scanner(System.in);
+
                System.out.println("-----------------------------------------------");
                System.out.println("Total files and directory found : "+ files.length);
                System.out.println("Location: "+ dir.getCanonicalPath());
@@ -34,7 +34,7 @@ public class FileHandler {
        }
 
     }
-    //Adding file in default location (Desktop)
+    //Adding file in default location (which is Desktop at the moment)
     public void addFile(){
         System.out.print("#Enter file name to add: ");
         Scanner sc = new Scanner(System.in);

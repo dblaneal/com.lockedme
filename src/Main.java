@@ -10,6 +10,7 @@ public class Main {
         runProgramme();
     }
 
+    // Method for displaying main menu and operate as per user input.
     public static void runProgramme(){
         Scanner sc = new Scanner(System.in);
         int option = 1;
